@@ -30,3 +30,5 @@ function updateDisplay(value) {
     let displayedText = document.querySelector("#output");
     displayedText.textContent = value.toString();
 }
+
+const numberButtons = Array.from(document.getElementsByClassName('numberButton'));
