@@ -3,12 +3,6 @@ html, body {
     margin: 0;
 }
 
-main {
-    width: 60%;
-    height: 80%;
-    margin: auto;
-}
-
 .vertical-center {
     margin: 0;
     position: absolute;
@@ -21,6 +15,36 @@ main {
     padding: 7% 5% 10%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-rows: 1fr 30px repeat(5, 1fr);
     grid-gap: 10px;
+    grid-template-areas:
+    "screen screen screen screen"
+    "empty empty empty empty"
+    "empty2 empty2 empty2 clear"
 }
+
+#calculator {
+    width: 60%;
+    height: 80%;
+    margin: auto;
+    border: 1px solid black;
+}
+
+#screen {
+    grid-area: screen;
+    border: 1px solid black;
+}
+
+#clear{
+    grid-area: clear;
+}
+
+.empty {
+    grid-area: empty;
+}
+
+.empty2 {
+    grid-area: empty2;
+}
+
