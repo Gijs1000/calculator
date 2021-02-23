@@ -25,3 +25,8 @@ function operate(operator, numberA, numberB) {
         return divide(numberA, numberB);
     }
 }
+
+function updateDisplay(value) {
+    let displayedText = document.querySelector("#output");
+    displayedText.textContent = value.toString();
+}
